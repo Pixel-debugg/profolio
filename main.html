@@ -1,0 +1,414 @@
+<html>
+    <head>
+        <title>
+            personal profolio
+        </title>
+        <style>
+            nav{
+                /*margin-left: 40%;*/
+                
+                border: 1px solid black;
+                background-color: grey;
+                box-shadow:0px 0px 40px rgb(255, 255, 255),
+                        0px 0px 40px rgb(0, 187, 255);
+                position: fixed;
+                padding-left: 550px;
+                padding-right: 555px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                
+            }
+            a{
+                padding:20px;
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            }
+            #home{
+                text-align: justify;
+                margin-left: 400px;
+                margin-right: 400px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            #head1{
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                transition-property: transform,color;
+                transition-duration: .5s;
+                transition-timing-function: ease-out;
+                transition-delay: 0s;
+
+            }
+
+            #head1:hover{
+                transform: scale(1.2);
+                color: white;
+            }
+            #pixel1{
+                height: 300px;
+                width: 300px; 
+                justify-content: center;
+                align-items: center;
+                margin-left: 30%;
+                border: 1px solid rgb(255, 255, 255) ;
+                border-radius: 10px;
+            
+                box-shadow: 0 0 20px #00f,
+                            0 0 40px #00f,
+                            0 0 60px #00f,
+                            0 0 80px #00f;
+                
+                animation-name:scrol ;
+                animation-timing-function: ease;
+                animation-timeline: view();
+                animation-range: entry 0% cover 50%;
+
+                
+            }
+            
+            @keyframes scrol{
+                from{
+                    opacity: 0;
+                    
+                    transform: translateX(-150px);
+                }
+                to{
+                    opacity: 1;  
+                    
+                    transform:translateX(-0px);
+                }
+            } 
+                
+            .main{
+                border: 5px solid rgb(0, 183, 255);
+                padding: 90px;
+                border-radius: 50px;
+                background: transparent;
+                box-shadow: 
+            0 0 20px #00f,
+            0 0 40px #00f,
+            0 0 60px #00f,
+            0 0 80px #00f;
+
+
+            transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+                
+            }
+            body{
+                background: linear-gradient(#a619f8,#00f2fe);
+                background-attachment: fixed;
+            }
+
+            .main:hover{
+                transform:scale(1.03) ;
+
+            }
+
+            .learning{
+                border: 1px solid black;
+                margin-left: 420px;
+                margin-right: 420px;
+                padding: 50px;
+                border-radius: 30px;
+
+                box-shadow: 
+                            
+                0px 0px 30px rgb(0, 157, 255),
+                0px 0px 50px rgb(0, 187, 255),
+                0px 0px 60px rgb(0, 179, 255),
+                0px 0px 80px rgb(0, 234, 255);
+
+            }
+
+            #hobb{
+                margin-left: 400px;
+            }
+            #skills{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: 1px solid black;
+                margin-left: 400px;
+                margin-right: 420px;
+                padding: 50px;
+                border-radius: 30px;
+                background-color: #a619f8;
+                /*box-shadow: 
+                            
+                0px 0px 30px rgb(255, 55, 0),
+                0px 0px 50px rgb(255, 77, 0),
+                0px 0px 60px rgb(255, 0, 0),
+                0px 0px 80px rgb(255, 0, 0);*/
+
+            }
+            #htmlcss{
+                height: 500px;
+                width: 600px; 
+                justify-content: center;
+                align-items: center;
+                margin-left: 29%;
+                border: 1px solid rgb(255, 255, 255) ;
+                border-radius: 10px;
+            
+                box-shadow: 0 0 20px #00f,
+                            0 0 40px #00f,
+                            0 0 60px #00f,
+                            0 0 80px #00f;
+                            animation-name:scrol ;
+                            animation-timing-function: ease;
+                            animation-timeline: view();
+                            animation-range: entry 0% cover 50%;
+
+                
+            }
+            
+            @keyframes scrol{
+                from{
+                    opacity: 0;
+                    
+                    transform: translateX(150px);
+                }
+                to{
+                    opacity: 1;  
+                    
+                    transform:translateX(-0px);
+                }
+            } 
+
+            #dream{
+                text-align: center;
+                font-size: larger;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                animation-name: dream;
+                animation-timing-function:linear ;
+                animation-duration: 1s;
+                animation-delay: 0s;
+                animation-timeline: view();
+            }
+                    @keyframes dream{
+                        from{
+                            transform: scale(1);
+                            
+                        }
+                        to{
+                            transform: scale(1.5);
+                            color: rgb(255, 0, 0);
+                        }
+                    }
+                    #fun{
+                        text-align: center;
+                        font-size:large;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        border: 1px solid black;
+                        margin-left: 30%;
+                        margin-right: 30%;
+                        padding: 50px;
+                        background: linear-gradient(black,white);
+                        border-radius: 10px;
+                        
+                        
+                                animation-name:scrol ;
+                                animation-timing-function: ease;
+                                animation-timeline: view();
+                                animation-range: entry 0% cover 50%;
+                    }
+            
+            @keyframes scrol{
+                from{
+                    opacity: 0;
+                    
+                    transform: translateX(150px);
+                }
+                to{
+                    opacity: 1;  
+                    
+                    transform:translateX(-0px);
+                    color: rgb(0, 0, 0);
+                }
+            } 
+
+            .serv{
+                margin-left: 30%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #se{
+
+                height: 500px;
+                width:800px;
+                margin-left: 20%;
+
+                    animation-name:scrol ;
+                            animation-timing-function: ease;
+                            animation-timeline: view();
+                            animation-range: entry 0% cover 50%;
+
+                
+            }
+            
+            @keyframes scrol{
+                from{
+                    opacity: 0;
+                    
+                    transform: translateX(150px);
+                }
+                to{
+                    opacity: 1;  
+                    
+                    transform:translateX(-0px);
+                }
+            } 
+
+            .sec{
+                margin-left: 30%;
+                font-size: large;
+            }
+            
+                        .last {
+                            border: 1px solid black;
+                            background-color: grey;
+                            padding-left: 43%;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                        }
+                    #one{
+                        border: 1px solid black;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-right: 40%;
+                        padding-left: 20px;
+                        
+                        box-shadow: 0 0 20px #00f,
+                            0 0 40px #00f,
+                            0 0 60px #00f,
+                            0 0 80px #00f;
+                            animation-name:scrol ;
+                            animation-timing-function: ease;
+                            animation-timeline: view();
+                            animation-range: entry 0% cover 50%;
+
+                
+            }
+            
+            @keyframes scrol{
+                from{
+                    opacity: 0;
+                    
+                    transform: translateX(150px);
+                }
+                to{
+                    opacity: 1;  
+                    
+                    transform:translateX(-0px);
+                }
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#contact">Contactme</a>
+        
+            </nav>
+        </div>
+        <br><br><br><br><br>
+        <section id="home">
+            <br><br><br><br><br>
+            <h1 id="head1">Hello am PIXEL</h1><br><br><br>
+    <p class="main">
+                A a passionate web developer and tech enthusiast.  
+    This page showcases my projects, skills, and the services I offer.  
+    Explore the sections above to know more about me, what I do, and how to get in touch!
+     I am an enthusiastic and curious individual who loves exploring new ideas and learning new skills. Technology and coding are some of my biggest interests, and I enjoy experimenting with web development, programming, and creative projects. I am always eager to solve problems and take on challenges that help me grow. Besides learning, I also value teamwork and enjoy sharing knowledge with others. I believe in staying positive, being disciplined, and making the most out of every opportunity. In my free time, I like to explore fun experiments, try out new ideas, and improve my skills so that I can achieve my goals and make a meaningful contribution
+    </p>
+    <br><br><br><br><br>
+
+    <img id="pixel1" src="pixel1.jpg">
+    </section>
+    <br><br><br><br>
+    <br><br><br><br><br>
+    
+
+
+    <section id="about">
+
+        <p class="learning">
+            “I am currently learning HTML and CSS, which are the basic building blocks of web development. Step by step, I’m exploring how to design and structure web pages, from simple layouts to adding styles that make them look more attractive. I haven’t completed learning everything yet, but each day I discover something new that motivates me to continue. My goal is to gain confidence in creating web pages on my own and then move on to more advanced topics once I have a strong foundation in HTML and CSS.”
+        </p>
+        <br><br><br><br>
+        <div id="hobb">
+                            <h1>  MY HOBBIES ARE :-</h1>
+                            <ul>
+                                <li>hearing instrumental musics</li>
+                                <li>play video games</li>
+                                <li>watch movies</li>
+                                <li>walking</li>
+                            </ul>
+        </div>
+
+        <br><br><br>
+        <div id="skills">
+            <h1>Skills and interests
+            </h1>
+            <p>
+                “My current skills are focused on front-end web development. I have been learning HTML and CSS, which help me build and style web pages, and I’m getting more confident with layouts, colors, and basic designs. Alongside that, I have recently started exploring JavaScript to add interactivity and bring my websites to life. My main interest is experimenting with different website ideas, trying out creative designs, and improving step by step as I learn more about coding and web development.”
+            </p>
+                
+        </div>
+
+        <br><br>
+        <img id="htmlcss" src="htmlcss.jpg" alt="">
+        <br><br><br>
+        <p id="dream">
+            Morever my dream is become a good website developer   !!!!.....
+        </p>
+    </section>
+    <br><br><br><br><br>
+    <h1 id="fun">"Fun Fact: I don’t really have much logic in coding yet, so most of my website ideas are basically built with 0% logic and 100% ChatGPT (yep, I’m mentioning you here 🤭).” </h1>
+     <br><br><br><br><br><br><br><br>
+    <section id="service">
+        <div class="serv">
+                            <h1>
+                                services providing :-
+                            </h1>
+
+                            <br>
+
+                            <ul>
+                                <li>creating simple ans clean websites using HTML & CSS</li>
+                                <li>Adding basic animations and effect to make websites to attractive</li>
+                                <li>Helping with personal websites,small bussiness pages and profolio sites</li>
+                            </ul>
+        </div> 
+    </section>    
+           <img id="se" src="funfun.png" alt="">
+    <br><br><br><br><br><br><br><br>
+
+
+    <section id="contact"> 
+                <div class="sec">
+                        <h1 id="one">Contact me :-</h1>
+                        <br><br>
+                        <ul>
+                            <li>+91 9048462556</li><br>
+                            <li>pixeldebugg11@gmail.com</li>
+                        </ul>
+                </div>
+
+                        <br><br>
+                    <div class="last">
+                        <a href="https://github.com/Pixel-debugg">github</a>
+                        <a href="https://wa.me/919048462556">whatsapp</a>
+                    </div>
+
+
+    </section>
+    </body>
+</html>
